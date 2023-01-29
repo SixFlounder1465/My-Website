@@ -1,0 +1,71 @@
+<html style="background-color:black;">
+   <head>
+      <title>My website</title>
+   </head>
+   <body>
+      <div class="menu">
+         <a href="index.html"><button class="menu-button">Home</button></a>
+         <button class="menu-button" style="color:lime;">Games</button>
+         <a href="programming.html"><button class="menu-button" style="width:95px;">Programming</button></a>
+         <a href="now.html"><button class="menu-button">Now</button></a>
+         <a href="Contact.html"><button class="menu-button">Contact</button></a>
+      </div>
+      <center>
+         <h1 class="animated-text" style="position:relative; top:20px;">My first game in html</h1>
+         <h2 class="text">Press [s] to jump for the cube and [a] to fire. For the sphere, press [k] to jump and [l] to fire.</h2>
+         <iframe style="width:1200px; height:1200px; outline:none; border: 0px solid transparent; position:relative; left:7.5%; top:40px;" src="shooter_geo_png/Shooter_Game.html"></iframe>
+        </center>
+   </body>
+   <style>
+      .menu {
+      height: 50px;
+      width: 100%;
+      background-color: rgb(44, 44, 44);
+      }
+      .menu-button {
+      position:relative;
+      top:15px;
+      left: 50px;
+      background-color: transparent;
+      border-radius: 5px black solid;
+      font-family: monospace;
+      width:75px;
+      height:25px;
+      border-radius: 20px ;
+      margin-left: 20px;
+      margin-right: 20px;
+      }
+      .menu-button:hover{
+      box-shadow: 0 0 10px 0 lime inset, 0 0 20px 2px lime;
+      border: 3px solid lime;
+      }
+      .text{
+      width:700px;
+      color:white;
+      font-family: monospace;
+      text-align: left;
+      position:relative;
+      top:40px;
+      left:20px
+      }
+      .animated-text {
+      text-align: center;
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: 700;
+      color: white;
+      animation: neon 5s ease-in-out infinite;
+      }
+      @keyframes neon {
+      0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00fbff, 0 0 70px #00bfff, 0 0 80px #00fbff, 0 0 100px #00fbff, 0 0 150px #00fbff;
+      }
+      50% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00fbff, 0 0 35px #00fbff, 0 0 40px #00fbff, 0 0 50px #00fbff, 0 0 75px #00fbff;
+      }
+      100%{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00fbff, 0 0 70px #00bfff, 0 0 80px #00fbff, 0 0 100px #00fbff, 0 0 150px #00fbff;
+      }
+      }
+   </style>
+</html>

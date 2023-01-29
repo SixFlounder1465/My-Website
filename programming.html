@@ -1,0 +1,82 @@
+<html style="background-color:black;">
+   <head>
+      <title>My website</title>
+   </head>
+   <body>
+      <div class="menu">
+         <a href="index.html"><button class="menu-button">Home</button></a>
+         <a href="Games.html"><button class="menu-button">Games</button></a>
+         <button class="menu-button" style="color:lime; width:95px;">Programming</button>
+         <a href="now.html"><button class="menu-button">Now</button></a>
+         <a href="Contact.html"><button class="menu-button">Contact</button></a>
+      </div>
+      <center>
+         <h1 class="animated-text" style="position:relative; top:20px;">How I learned programming</h1>
+         <h2 class="text">
+            It all started when I was 9 or 8 years old. My parents knew I wanted to learn programming, so they bought me a book.
+         </h2>
+         <h2 class="text">
+            When I became 11, they bought me another book, entitled "Java from 0 to expert" by Stefan Tanasa, Stefan Andrei and Cristian Olaru. This book helped me when I had problems in java programming but I couldn't read it all because it is very long.
+         </h2>
+
+         <h2 class="text">
+            I didn't learn everything from books. The internet has helped me a lot. I didn't watch any particular YouTube channel to learn programming, but I know a site that taught me how to code in html, javascript and css: <a href="https://www.w3schools.com/">W3schools</a> 
+         </h2>
+
+         <h2 class="text">My first book:</h2>
+
+         <iframe src="Curs-de-Programare-Pentru-Copii-de-Carol-Vorderman.pdf" style="width:800; height:800; position:relative; top:25px;"></iframe>
+      </center>
+   </body>
+   <style>
+      .menu {
+      height: 50px;
+      width: 100%;
+      background-color: rgb(44, 44, 44);
+      }
+      .menu-button {
+      position:relative;
+      top:15px;
+      left: 50px;
+      background-color: transparent;
+      border-radius: 5px black solid;
+      font-family: monospace;
+      width:75px;
+      height:25px;
+      border-radius: 20px ;
+      margin-left: 20px;
+      margin-right: 20px;
+      }
+      .menu-button:hover{
+      box-shadow: 0 0 10px 0 lime inset, 0 0 20px 2px lime;
+      border: 3px solid lime;
+      }
+      .text{
+      width:700px;
+      color:white;
+      font-family: monospace;
+      text-align: left;
+      position:relative;
+      top:20px;
+      }
+      .animated-text {
+      text-align: center;
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: 700;
+      color: white;
+      animation: neon 5s ease-in-out infinite;
+      }
+      @keyframes neon {
+      0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00fbff, 0 0 70px #00bfff, 0 0 80px #00fbff, 0 0 100px #00fbff, 0 0 150px #00fbff;
+      }
+      50% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00fbff, 0 0 35px #00fbff, 0 0 40px #00fbff, 0 0 50px #00fbff, 0 0 75px #00fbff;
+      }
+      100%{
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00fbff, 0 0 70px #00bfff, 0 0 80px #00fbff, 0 0 100px #00fbff, 0 0 150px #00fbff;
+      }
+      }
+   </style>
+</html>
