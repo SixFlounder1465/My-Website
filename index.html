@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Protected Page</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Password-Protected Page</h1>
+        <p class="warning">Confidential Information - Authorized Access Only</p>
+        <form id="password-form">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        const passwordForm = document.getElementById('password-form');
+        const message = document.getElementById('message');
+        const correctPassword = 'a'; // Replace with your desired password
+
+        passwordForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const passwordInput = document.getElementById('password').value;
+            
+            if (passwordInput === correctPassword) {
+                //message.textContent = 'Access Granted!'; // You can redirect the user to the protected directory here.
+		window.location.href = 'docs.html'; // Replace with your desired URL
+            } else {
+                message.textContent = 'Access Denied. Incorrect Password.';
+            }
+        });
+    </script>
+</body>
+</html>
