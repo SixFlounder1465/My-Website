@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Directory Listing</h1>
+    </header>
+    <div class="container">
+        <p style="color: red;">Confidentiality Warning: Unauthorized access to or sharing of files may be subject to legal action.</p>
+        <ul>
+            <li><a href="file1.pdf" download>file1.pdf</a></li>
+            <li><a href="file2.txt" download>file2.txt</a></li>
+            <!-- Add more files as needed -->
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+                if (confirm('By downloading this file, you agree to use it responsibly and in compliance with all applicable laws and regulations. Unauthorized use may result in legal consequences.')) {
+                    alert('Thank you for agreeing to use the file responsibly.');
+                } else {
+                    event.preventDefault();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
